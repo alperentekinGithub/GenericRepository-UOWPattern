@@ -13,10 +13,10 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            String connetc = "server= ;database= ;User Id= ; Password= ; TrustServerCertificate=True;integrated security = true;";
+            String connect = "server= ;database= ;User Id= ; Password= ; TrustServerCertificate=True;integrated security = true;";
 
 
-            optionsBuilder.UseSqlServer(connetc);
+            optionsBuilder.UseSqlServer(connect);
         }
 
         public DbSet<Customer> Customers { get; set; }
